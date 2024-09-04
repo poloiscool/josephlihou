@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles_projects.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Share+Tech+Mono&family=Syne+Mono&family=VT323&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  </head>
+  <body>
+
+    <div class="content flow">
+      <div class="even-columns">
+        <div class="item item-1">
+          <a href="index.html">
+          <div class="word w1">Joseph Lihou</div>
+        </a>
+        </div>
+        <p>/</p>
+        <div class="item item-2">
+          <a href="projects.html">
+          <div class="word w2">Projects</div>
+        </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="indicator"></div>
+      <div class="gallery">
+
+<!--FATHOMS-->
+
+        <div class="gallery-item">
+          <a href="fathoms_stills.html" id="textoverlay">
+            <img src="/gallery 1/assets/project/project1.1.webp" loading="lazy"/>
+            <p id="txt1">Fathoms / stills</p>
+          </a>
+        </div>
+
+        <div class="gallery-item">
+          <a href="fathoms_bts.html" id="textoverlay">
+            <img src="/gallery 1/assets/fathoms/fathoms3.webp" loading="lazy"/>
+            <p id="txt1">Fathoms / BTS</p>
+          </a>
+        </div>
+
+        <div class="gallery-item">
+          <a href="fathoms_sketchbook.html" id="textoverlay">
+            <img src="/gallery 1/assets/sketchbook/sketchbook5.png" loading="lazy"/>
+            <p id="txt1">Fathoms / sketchbook</p>
+          </a>
+        </div>
+
+        <div class="titles"><p>fathoms / production designer</p></div>
+
+<!--STEREO CUPID
+        <div class="gallery-item">
+          <a href="fathoms.html" id="textoverlay">
+            <img src="/gallery 1/assets/cupid/ft2.png" />
+            <p id="txt1">Stereo Cupid / Live</p>
+          </a>
+        </div>
+
+
+        <div class="gallery-item">
+          <a href="stereocupid" id="textoverlay">
+            <img src="/gallery 1/assets/project/project2.1.webp" alt="" />
+            <p id="txt1">Stereo Cupid / promo</p>
+          </a>
+        </div>
+
+        <div class="titles"><p>stereo cupid / production designer</p></div>
+-->
+<!--
+        <div class="gallery-item">
+          <img src="/gallery 1/assets/opera/txt1.png" alt="" />
+        </div>
+        <div class="gallery-item">
+          <img src="/gallery 1/assets/featured/DRAFTft1.png" alt="" />
+        </div>
+        <div class="titles"><p>opera / art director</p></div>
+-->
+
+        <div class="gallery-item">
+          <a href="franchise_concepts.html" id="textoverlay">
+          <img src="/gallery 1/assets/wb/V2 Joseph Lihou - Jan-May 2024 Portfolio.003.png" alt="" loading="lazy"/>
+          <p id="txt1">the franchise / concepts</p>
+        </a>
+        </div>
+        <div class="gallery-item">
+          <a href="franchise_visuals.html" id="textoverlay">
+          <img src="/gallery 1/assets/wb/visuals/chrontinuum5.png" alt="" id="blur" loading="lazy"/>
+          <p id="txt1">the franchise / visuals</p>
+        </a>
+        </div>
+        <a href="franchise_drawings.html" id="textoverlay">
+        <div class="gallery-item">
+          <img src="/gallery 1/assets/wb/drawing.png" alt="" loading="lazy"/>
+          <p id="txt1">the franchise / drawings</p>
+        </a>
+        </div>
+        <div class="titles"><p>warner bros hbo / the franchise</p></div>
+
+<!--BA Architecture-->
+
+        <div class="gallery-item">
+          <a href="ba_portfolio.html" id="textoverlay">
+          <img src="/gallery 1/assets/ba/ft1.png" alt="" loading="lazy"/>
+          <p id="txt1">ba architecture / portfolio</p>
+        </a>
+        </div>
+        <div class="gallery-item">
+          <a href="ba_gfx.html" id="textoverlay">
+          <img src="/gallery 1/assets/ba/ss7.jpg" alt="" loading="lazy"/>
+          <p id="txt1">ba architecture / graphics</p>
+        </a>
+        </div>
+        <div class="gallery-item">
+          <a href="ba_models.html" id="textoverlay">
+          <img src="/gallery 1/assets/ba/vm8.png" alt="" loading="lazy"/>
+          <p id="txt1">ba architecture / models</p>
+        </a>
+        </div>
+        <div class="gallery-item">
+          <a href="ba_exhibition.html" id="textoverlay">
+          <img src="/gallery 1/assets/ba/ft4.png" alt="" loading="lazy"/>
+          <p id="txt1">ba architecture / exhibition curation</p>
+        </a>
+        </div>
+        <div class="titles"><p>saint martins / ba architecture</p></div>
+      
+<!--Chelsea Physic Garden-->
+
+<div class="gallery-item">
+  <a href="cpg.html" id="textoverlay">
+  <img src="/gallery 1/assets/cpg/cpg5.webp" alt="" loading="lazy"/>
+  <p id="txt1">chelsea physic garden / sculpture</p>
+</a>
+</div>
+<div class="titles"><p>chelsea physic garden / sculpture</p></div>
+
+
+      </div>
+    </div>
+
+<div class="footer">
+  <p>Website Design and code by joseph lihou</p>
+</div>
+
+<script>document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".item");
+
+  items.forEach((item) => {
+    item.addEventListener("mouseenter", shuffleAnimation);
+  });
+});
+
+function getRandomCharacter() {
+  const chars =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  return chars[Math.floor(Math.random() * chars.length)];
+}
+
+function shuffleAnimation(event) {
+  const target = event.currentTarget;
+
+  if (target.dataset.animating) {
+    return;
+  }
+
+  target.dataset.animating = true;
+
+  const words = target.querySelectorAll(".word");
+  const originalWords = Array.from(words).map((word) => word.textContent);
+
+  let shuffles = 0;
+  const maxShuffles = 5;
+  const intervalDuration = 400 / maxShuffles;
+
+  let animationInterval = setInterval(() => {
+    if (shuffles >= maxShuffles) {
+      clearInterval(animationInterval);
+      words.forEach((word, index) => {
+        word.textContent = originalWords[index];
+      });
+
+      delete target.dataset.animating;
+    } else {
+      words.forEach((word) => {
+        const length = word.textContent.length;
+        let shuffledText = "";
+        for (let i = 0; i < length; i++) {
+          shuffledText += getRandomCharacter();
+        }
+        word.textContent = shuffledText;
+      });
+      shuffles++;
+    }
+  }, intervalDuration);
+}</script>
+
+
+    <script src="./script_projects.js"></script>
+    <script src="./script.js"></script>
+
+
+  </body>
+</html>
