@@ -58,6 +58,9 @@ body {
   align-items: center;
   filter: blur(3px);
   -webkit-filter: blur(100px);
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1); 
+  filter: grayscale(100%); 
 }
 
 
